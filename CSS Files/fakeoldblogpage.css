@@ -1,0 +1,69 @@
+@import url("../CSS Files/BlogPageStyleModules/NavBarStyling.css");
+@import url("../CSS Files/BlogPageStyleModules/NestedGridComponents.css");
+@import url("../CSS Files/BlogPageStyleModules/HeaderContent.css");
+@import url("../CSS Files/BlogPageStyleModules/BasicBlogStyling.css");
+
+/* Mobile first */
+.container{
+  display:grid;
+  height: 90vh;
+  grid-template-columns: 500px;
+  grid-template-rows: 150px 1fr 1fr;
+  border: 2px solid yellow;
+    /* Use grid-template-area to create a mobile layout where each named space occupies its own row */
+  grid-template-areas:
+    "hd"
+    "sd"
+    "main"
+    "ft";
+}
+
+.box{
+    border: 1px solid red;
+    background: #F8FA9D;
+    }
+
+  .header{
+    grid-area:hd;
+  }
+
+  .footer{
+    grid-area: ft; 
+    text-align: center; 
+  }
+
+  .sidebar{
+    grid-area: sd;
+  }
+
+  .content{
+    grid-area: main;
+  }
+
+/* If Screen Is Wide Enough */
+@media(min-width:600px) and (max-width: 900px){
+.container{
+      display:grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 250px 600px;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "sd sd main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+      border: 2px solid red;
+      margin: auto;
+  }
+}
+/*If screen is extra large */
+@media(min-width:901px){ 
+    .container{
+      display:grid;
+      grid-template-columns: repeat( 3, 300px);
+      grid-template-rows: 250px 600px;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "sd main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+      border: px solid yellow;
+  }
+}  

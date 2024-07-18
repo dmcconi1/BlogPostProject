@@ -1,0 +1,24 @@
+.headertext{
+    float: left;
+    padding: 10px;
+  }
+
+.headerimage{
+    float: right;
+    height: 220px;
+    width: 270px;
+    border: 1px solid red;
+    background: white;
+    margin-right: 20pt;
+    margin-top: 5pt;
+    margin-bottom: 10pt;
+    padding: 5px;
+    background-image: url(../../assets/blogimage.JPG);
+    background-size: cover;
+  }
+  
+figcaption{
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+  }

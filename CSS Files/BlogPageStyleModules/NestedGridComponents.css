@@ -1,0 +1,21 @@
+/* add css for nested grid here */
+.nestedgrid{
+    display: grid;
+    grid-template-columns: fit-content(50%) fit-content(50%);
+    grid-template-columns: fit-content(50%) fit-content(50%);
+    grid-gap: 10px;
+    border: 1px solid white;
+    margin: 3px;
+  }
+  .textbox{
+    background-color: gold;
+    border: 1px solid red; 
+     
+  }
+  
+  .answer{
+    font-size: 18pt; 
+    font-style: italic;
+    color: grey;
+  }
+  
